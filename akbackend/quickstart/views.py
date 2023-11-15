@@ -3,6 +3,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework import permissions
 from akbackend.quickstart.serializers import ClassNameSerializer, TagSerializer, OperatorSerializer
+from akbackend.quickstart.models import ClassName, Tag, Operator
 
 
 class ClassNameViewSet(viewsets.ModelViewSet):
