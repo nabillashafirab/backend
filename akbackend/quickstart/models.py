@@ -1,13 +1,13 @@
 from django.db import models
 
 class ClassName(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
 
 class Tag(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
@@ -22,7 +22,7 @@ class Operator(models.Model):
         (6, '6-Star'),
     ]
 
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, unique=True)
     rarity = models.IntegerField(choices=RARITY_CHOICES)
     class_name = models.ForeignKey(ClassName, on_delete=models.CASCADE)
     # image = models.ImageField(upload_to='operator_images/')
