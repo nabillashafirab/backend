@@ -14,7 +14,7 @@ class TagSerializer(serializers.ModelSerializer):
 
 class OperatorSerializer(serializers.ModelSerializer):
     class_name = ClassNameSerializer()
-    tags = TagSerializer(many=True)
+    tags = serializers.SlugRelatedField(many=True, slug_field='name', queryset=Tag.objects.all())
 
     class Meta:
         model = Operator
