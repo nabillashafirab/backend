@@ -1,6 +1,6 @@
 # app_name/serializers.py
 from rest_framework import serializers
-from akbackend.quickstart.models import ClassName, Tag, Operator
+from quickstart.models import ClassName, Tag, Operator
 
 class ClassNameSerializer(serializers.ModelSerializer):
     class Meta:
