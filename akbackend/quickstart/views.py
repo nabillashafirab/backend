@@ -12,7 +12,7 @@ class ClassNameViewSet(viewsets.ModelViewSet):
     """
     queryset = ClassName.objects.all()
     serializer_class = ClassNameSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []
 
 
 class TagViewSet(viewsets.ModelViewSet):
@@ -21,7 +21,7 @@ class TagViewSet(viewsets.ModelViewSet):
     """
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []
 
 class OperatorViewSet(viewsets.ModelViewSet):
     """
@@ -29,4 +29,4 @@ class OperatorViewSet(viewsets.ModelViewSet):
     """
     queryset = Operator.objects.all()
     serializer_class = OperatorSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = []

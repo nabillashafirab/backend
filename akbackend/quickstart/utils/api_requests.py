@@ -5,7 +5,7 @@ new_data = {
     "name": "Firewatch",
     "rarity": 5,
     "class_name": "Sniper",
-    "tags": ["Nuker", "DPS", "Ranged"]
+    "tags": ["Nuker", "DPS", "Ranged"],
 }
 
 # The API endpoint to communicate with
