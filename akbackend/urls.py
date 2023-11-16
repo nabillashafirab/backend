@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.urls import include, path
 from rest_framework import routers
-from akbackend.quickstart import views
+from quickstart import views
 
 router = routers.DefaultRouter()
 router.register(r'operators', views.OperatorViewSet)
