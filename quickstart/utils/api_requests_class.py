@@ -2,7 +2,7 @@ import requests
 
 # Define new data to create
 new_data = {
-    "name": "Sniper",
+    "name": "Guard",
 }
 
 # The API endpoint to communicate with
