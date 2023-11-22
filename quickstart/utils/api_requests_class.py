@@ -10,9 +10,6 @@ try:
     
     # Decode JSON content
     response = r.json()
-    
-    # Print the response from the GET request
-    print(response)
 
     # Post data
     for i in response:
