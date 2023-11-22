@@ -1,5 +1,5 @@
 import requests
-from name_converter import NameConvert
+from name_converter import ClassNameConvert, TagConvert
 
 # The API endpoint to communicate with
 url_post = "http://127.0.0.1:8000/operators/"
@@ -14,8 +14,8 @@ response = r.json()
 for key, value in response.items():
     # Define new data to create
     new_data = {
-        "class_name": NameConvert(value["profession"]),
-        "tags": list(map(NameConvert, value['tagList'])),
+        "class_name": ClassNameConvert(value["profession"]),
+        "tags": list(map(TagConvert, value['tagList'])),
         "name": value['name'],
         "rarity": value['rarity']+1
     }

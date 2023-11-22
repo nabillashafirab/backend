@@ -36,3 +36,5 @@ except requests.exceptions.RequestException as err:
 except requests.exceptions.JSONDecodeError as json_err:
     print("JSON Decode Error:", json_err)
     print("Response content:", r.text)  # Print the actual content for further inspection
+
+
